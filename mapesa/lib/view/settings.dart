@@ -44,7 +44,17 @@ class _SettingsState extends State<Settings> {
                   ),
                 )
               ],
-            )
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(
+              "Settings",
+              style: TextStyle(
+                  fontSize: 30,
+                  color: Theme.of(context).primaryColor,
+                  fontWeight: FontWeight.bold),
+            ),
           ]),
         ),
       ),

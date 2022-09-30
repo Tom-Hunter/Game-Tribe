@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                           type: PageTransitionType.rightToLeft));
                 },
                 child: Padding(
-                  padding: const EdgeInsets.only(right: 20),
+                  padding: const EdgeInsets.only(right: 30),
                   child: Icon(
                     Icons.settings,
                     color: Theme.of(context).primaryColor,

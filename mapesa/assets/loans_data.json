@@ -1,0 +1,16 @@
+{
+  "loans": [
+   { 
+    "name": "Car Mortgage",
+    "interest": "7.0% p.m",
+    "date": "02-04-2022",
+    "amount": "700000.00"
+  },
+  {
+    "name": "Investa Loan",
+    "interest": "8.5% p.m",
+    "date": "15-08-2022",
+    "amount": "350000.00"
+  }
+]
+}

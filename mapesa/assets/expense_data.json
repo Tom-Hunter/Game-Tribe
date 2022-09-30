@@ -1,0 +1,64 @@
+{
+  "expenses": [
+   { 
+    "name": "Gas Refill",
+    "date": "02-09-2022",
+    "amount": "7000.00"
+  },
+  {
+    "name": "Electricity Bill",
+    "date": "03-09-2022",
+    "amount": "8000.00"
+  },
+  {
+    "name": "House essentials shopping",
+    "date": "04-09-2022",
+    "amount": "4000.00"
+  },
+  {
+    "name": "Grocery shopping",
+    "date": "06-09-2022",
+    "amount": "3000.00"
+  },
+  {
+    "name": "Internet bill",
+    "date": "10-09-2022",
+    "amount": "5000.00"
+  },
+  {
+    "name": "Water bill",
+    "date": "13-09-2022",
+    "amount": "3000.00"
+  },
+  {
+    "name": "House bi-annual maintenance",
+    "date": "16-09-2022",
+    "amount": "6000.00"
+  },
+  {
+    "name": "Car Servicing",
+    "date": "17-09-2022",
+    "amount": "30000.00"
+  },
+  {
+    "name": "Car Insurance",
+    "date": "20-09-2022",
+    "amount": "15000.00"
+  },
+  {
+    "name": "Malibu retreat",
+    "date": "22-09-2022",
+    "amount": "20000.00"
+  },
+  {
+    "name": "Crisis shopping",
+    "date": "24-09-2022",
+    "amount": "4500.00"
+  },
+  {
+    "name": "Chama contibution",
+    "date": "25-09-2022",
+    "amount": "2000.00"
+  }
+]
+}

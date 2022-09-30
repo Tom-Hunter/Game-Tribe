@@ -1,5 +1,5 @@
 name: mapesa
-description: A new Flutter project.
+description: A test project for the UI/UX developer interview.
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
@@ -29,5 +29,10 @@ flutter:
 
   assets:
     - assets/wp-1.jpg
+    - assets/transaction_data.json
+    - assets/expense_data.json
+    - assets/income_data.json
+    - assets/loans_data.json
+    - assets/savings_data.json
 
   

@@ -1,0 +1,154 @@
+{
+  "transactions": [
+  { 
+    "name": "September Salary",
+    "type": "Income",
+    "date": "02-10-2021",
+    "amount": "120000.00"
+  },
+  {
+    "name": "October Salary",
+    "type": "Income",
+    "date": "02-11-2021",
+    "amount": "120000.00"
+  },
+  {
+    "name": "November Salary",
+    "type": "Income",
+    "date": "02-12-2021",
+    "amount": "120000.00"
+  },
+  {
+    "name": "December Salary",
+    "type": "Income",
+    "date": "02-01-2022",
+    "amount": "120000.00"
+  }, 
+  { 
+    "name": "January Salary",
+    "type": "Income",
+    "date": "02-02-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "February Salary",
+    "type": "Income",
+    "date": "02-03-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "March Salary",
+    "type": "Income",
+    "date": "02-04-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "April Salary",
+    "type": "Income",
+    "date": "02-05-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "May Salary",
+    "type": "Income",
+    "date": "02-06-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "June Salary",
+    "type": "Income",
+    "date": "02-07-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "July Salary",
+    "type": "Income",
+    "date": "02-08-2022",
+    "amount": "120000.00"
+  },
+  {
+    "name": "August Salary",
+    "type": "Income",
+    "date": "02-09-2022",
+    "amount": "120000.00"
+  },
+  { 
+    "name": "Gas Refill",
+    "type": "Expense",
+    "date": "02-09-2022",
+    "amount": "7000.00"
+  },
+  {
+    "name": "Electricity Bill",
+    "type": "Expense",
+    "date": "03-09-2022",
+    "amount": "8000.00"
+  },
+  {
+    "name": "House essentials shopping",
+    "type": "Expense",
+    "date": "04-09-2022",
+    "amount": "4000.00"
+  },
+  {
+    "name": "Grocery shopping",
+    "type": "Expense",
+    "date": "06-09-2022",
+    "amount": "3000.00"
+  },
+  {
+    "name": "Internet bill",
+    "type": "Expense",
+    "date": "10-09-2022",
+    "amount": "5000.00"
+  },
+  {
+    "name": "Water bill",
+    "type": "Expense",
+    "date": "13-09-2022",
+    "amount": "3000.00"
+  },
+  {
+    "name": "House bi-annual maintenance",
+    "type": "Expense",
+    "date": "16-09-2022",
+    "amount": "6000.00"
+  },
+  {
+    "name": "Car Servicing",
+    "type": "Expense",
+    "date": "17-09-2022",
+    "amount": "30000.00"
+  },
+  {
+    "name": "Car Insurance",
+    "type": "Expense",
+    "date": "20-09-2022",
+    "amount": "15000.00"
+  },
+  {
+    "name": "Malibu retreat",
+    "type": "Expense",
+    "date": "22-09-2022",
+    "amount": "20000.00"
+  },
+  {
+    "name": "Crisis shopping",
+    "type": "Expense",
+    "date": "24-09-2022",
+    "amount": "4500.00"
+  },
+  {
+    "name": "Chama contibution",
+    "type": "Expense",
+    "date": "25-09-2022",
+    "amount": "2000.00"
+  },
+  {
+    "name": "September Salary",
+    "type": "Income",
+    "date": "02-10-2022",
+    "amount": "120000.00"
+  }
+]
+}

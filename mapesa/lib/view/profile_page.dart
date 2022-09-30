@@ -153,7 +153,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
                       title: Text(
-                        'KES. 120,000',
+                        'KES. 1,560,000',
                         style: TextStyle(
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
@@ -170,7 +170,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           context,
                           PageTransition(
                               child: const ExpensePage(),
-                              type: PageTransitionType.leftToRight));
+                              type: PageTransitionType.bottomToTop));
                     },
                     child: const ListTile(
                       leading: Text(
@@ -179,7 +179,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
                       title: Text(
-                        'KES. 100,000',
+                        'KES. 107,500',
                         style: TextStyle(
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
@@ -205,7 +205,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
                       title: Text(
-                        'KES. 20,000',
+                        'KES. 18,000',
                         style: TextStyle(
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
@@ -231,7 +231,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),
                       title: Text(
-                        'KES. 30,000',
+                        'KES. 1,050,000',
                         style: TextStyle(
                             fontSize: 20, fontFamily: 'Century Gothic'),
                       ),

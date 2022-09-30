@@ -1,7 +1,32 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
-class HomeTransactionHistory extends StatelessWidget {
+class HomeTransactionHistory extends StatefulWidget {
   const HomeTransactionHistory({super.key});
+
+  @override
+  State<HomeTransactionHistory> createState() => _HomeTransactionHistoryState();
+}
+
+class _HomeTransactionHistoryState extends State<HomeTransactionHistory> {
+  List _transactions = [];
+
+  @override
+  void initState() {
+    super.initState();
+    readJson();
+  }
+
+  // Fetch content from the json file
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/transaction_data.json');
+    final data = await json.decode(response);
+    setState(() {
+      _transactions = data["transactions"];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +36,7 @@ class HomeTransactionHistory extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Text('Transaction History:',
+            Text('Transaction History',
                 textAlign: TextAlign.left,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -36,9 +61,19 @@ class HomeTransactionHistory extends StatelessWidget {
                       blurRadius: 6,
                       offset: Offset(2.5, 3))
                 ]),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-            ))
+            child: ListView.builder(
+                itemCount: _transactions.length,
+                itemBuilder: (BuildContext context, index) {
+                  return ListTile(
+                    leading: Text(
+                      _transactions[index]["type"],
+                      style: TextStyle(color: Theme.of(context).primaryColor),
+                    ),
+                    title: Text(_transactions[index]["name"]),
+                    subtitle: Text(_transactions[index]["date"]),
+                    trailing: Text(_transactions[index]["amount"]),
+                  );
+                })),
       ],
     );
   }
