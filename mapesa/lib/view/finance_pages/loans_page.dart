@@ -11,11 +11,13 @@ class LoansPage extends StatefulWidget {
 }
 
 class _LoansPageState extends State<LoansPage> {
+  //List to hold the income list temporarily
   List _loans = [];
 
   @override
   void initState() {
     super.initState();
+    //readJson function init
     readJson();
   }
 
@@ -105,7 +107,7 @@ class _LoansPageState extends State<LoansPage> {
                         title: Text(_loans[index]["name"]),
                         subtitle: Text(_loans[index]["date"]),
                         trailing: Text(_loans[index]["amount"]),
-                      );
+                      ); //List Tile to display the loa details
                     },
                   ),
                 ),

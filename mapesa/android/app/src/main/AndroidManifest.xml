@@ -2,7 +2,7 @@
     package="com.example.mapesa">
    <application
         android:label="mapesa"
-        android:name="Mapesa"
+        android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"

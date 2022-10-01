@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const HomeProfileIcon(),
-              const TitleWidget(),
+              const TitleWidget(), //Widget to display the app title
               GestureDetector(
                 onTap: () {
                   Navigator.push(
@@ -74,11 +74,11 @@ class _HomePageState extends State<HomePage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: const [HomeIncome(), HomeExpense()],
-                ),
+                ), //Row holding the income and expense balances
                 const SizedBox(
                   height: 30,
                 ),
-                const HomeTransactionHistory()
+                const HomeTransactionHistory(), //A widget to dispay the transaction history
               ],
             ),
           ),

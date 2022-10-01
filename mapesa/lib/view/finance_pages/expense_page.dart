@@ -11,11 +11,13 @@ class ExpensePage extends StatefulWidget {
 }
 
 class _ExpensePageState extends State<ExpensePage> {
+  //List to hold the expenses list temporarily
   List _expense = [];
 
   @override
   void initState() {
     super.initState();
+    //Initializing the function of reading the specific json file
     readJson();
   }
 
@@ -39,7 +41,7 @@ class _ExpensePageState extends State<ExpensePage> {
           decoration: BoxDecoration(
             color: Theme.of(context).backgroundColor,
             image: const DecorationImage(
-                image: AssetImage('assets/wp-1.jpg'),
+                image: AssetImage('assets/wp-1.jpg'), //Page background
                 opacity: 0.2,
                 scale: 1.0,
                 alignment: Alignment.bottomCenter,
@@ -102,7 +104,7 @@ class _ExpensePageState extends State<ExpensePage> {
                       title: Text(_expense[index]["name"]),
                       subtitle: Text(_expense[index]["date"]),
                       trailing: Text(_expense[index]["amount"]),
-                    );
+                    ); //ListTile to display the expenses
                   },
                 ),
               ),

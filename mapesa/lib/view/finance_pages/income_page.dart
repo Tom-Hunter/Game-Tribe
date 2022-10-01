@@ -11,11 +11,13 @@ class IncomePage extends StatefulWidget {
 }
 
 class _IncomePageState extends State<IncomePage> {
+  //List to hold the income list temporarily
   List _income = [];
 
   @override
   void initState() {
     super.initState();
+    //function initialization
     readJson();
   }
 
@@ -104,7 +106,7 @@ class _IncomePageState extends State<IncomePage> {
                         title: Text(_income[index]["name"]),
                         subtitle: Text(_income[index]["date"]),
                         trailing: Text(_income[index]["amount"]),
-                      );
+                      ); //ListTile to display the income details
                     },
                   ),
                 ),
