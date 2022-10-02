@@ -14,8 +14,24 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+
+  #Package for stylish transition between pages
   page_transition: ^2.0.9
+
+  #Package for creating launcher icons
   flutter_launcher_icons: ^0.10.0
+
+  #Package for creating a splash screen
+  flutter_native_splash: ^2.2.9
+
+  #Package that enables widget and text animation
+  widget_and_text_animator: ^1.0.9
+
+  #Package to display data in a pie chart
+  pie_chart: ^5.3.2
+
+  #Package to enable responsive scaling on various devices
+  relative_scale: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -50,5 +66,7 @@ flutter:
     - assets/income_data.json
     - assets/loans_data.json
     - assets/savings_data.json
+    - assets/mapesa_user_icon.png
+    - assets/images/
 
   
