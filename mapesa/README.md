@@ -1,3 +1,3 @@
 # mapesa
 
-A financial management application.
+A flutter financial management application.
