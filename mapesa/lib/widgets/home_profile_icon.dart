@@ -10,47 +10,68 @@ class HomeProfileIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return RelativeBuilder(
       builder: (context, height, width, sx, sy) {
-        return GestureDetector(
-          onTap: () {
-            Navigator.push(
-                context,
-                PageTransition(
-                    type: PageTransitionType.rightToLeft,
-                    child: const ProfilePage()));
-          },
-          child: Padding(
-            padding: EdgeInsets.only(right: sx(20), top: sx(10)),
-            child: Column(
-              children: [
-                Container(
-                  height: MediaQuery.of(context).size.width / 11,
-                  width: MediaQuery.of(context).size.width / 11,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(100),
-                      boxShadow: [
-                        BoxShadow(
-                            blurRadius: sx(7),
-                            offset: Offset(sx(2), sx(3)),
-                            spreadRadius: sx(3),
-                            color: Colors.grey)
-                      ]),
-                  child: Image.asset(
-                    'assets/mapesa_user_icon.png',
-                    scale: 1,
-                    alignment: Alignment.center,
+        return Padding(
+          padding: EdgeInsets.only(right: sx(20), top: sx(10)),
+          child: Column(
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.width / 11,
+                width: MediaQuery.of(context).size.width / 11,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(100),
+                    boxShadow: [
+                      BoxShadow(
+                          blurRadius: sx(7),
+                          offset: Offset(sx(2), sx(3)),
+                          spreadRadius: sx(3),
+                          color: Colors.grey)
+                    ]),
+                child: ClipRRect(
+                  clipBehavior: Clip.antiAlias,
+                  borderRadius: BorderRadius.circular(100),
+                  child: Material(
+                    child: InkWell(
+                      highlightColor: Theme.of(context).primaryColor,
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            PageTransition(
+                                type: PageTransitionType.rightToLeft,
+                                child: const ProfilePage()));
+                      },
+                      child: Ink(
+                        height: MediaQuery.of(context).size.width / 11,
+                        width: MediaQuery.of(context).size.width / 11,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(100),
+                            boxShadow: [
+                              BoxShadow(
+                                  blurRadius: sx(7),
+                                  offset: Offset(sx(2), sx(3)),
+                                  spreadRadius: sx(3),
+                                  color: Colors.grey)
+                            ]),
+                        child: Image.asset(
+                          'assets/mapesa_user_icon.png',
+                          scale: 1,
+                          alignment: Alignment.center,
+                        ),
+                      ),
+                    ),
                   ),
                 ),
-                Text(
-                  'Hunter',
-                  style: TextStyle(
-                    color: Theme.of(context).primaryColor,
-                    fontSize: sx(8),
-                    fontWeight: FontWeight.bold,
-                  ),
+              ),
+              Text(
+                'Hunter',
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                  fontSize: sx(8),
+                  fontWeight: FontWeight.bold,
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         );
       },

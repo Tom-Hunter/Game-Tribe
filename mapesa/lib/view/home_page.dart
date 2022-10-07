@@ -88,60 +88,89 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           height: sx(40),
                         ),
-                        GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                  context,
-                                  PageTransition(
-                                      child: const SummaryPage(),
-                                      type: PageTransitionType.leftToRight));
-                            },
-                            child: Container(
-                              height: MediaQuery.of(context).size.height / 23,
-                              width: MediaQuery.of(context).size.width / 2,
-                              decoration: BoxDecoration(
-                                  color: Theme.of(context).secondaryHeaderColor,
-                                  borderRadius: BorderRadius.circular(20),
-                                  boxShadow: [
-                                    BoxShadow(
-                                        color: const Color.fromARGB(
-                                            94, 158, 158, 158),
-                                        spreadRadius: sx(2),
-                                        blurRadius: sx(6),
-                                        offset: Offset(sx(2.5), sx(3)))
-                                  ]),
-                              child: Center(
-                                child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text('Get Your Summary',
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: sx(25),
-                                          fontFamily: 'Century Gothic',
-                                        )),
-                                    SizedBox(
-                                      width: sx(20),
-                                    ),
-                                    WidgetAnimator(
-                                      atRestEffect: WidgetRestingEffects.pulse(
-                                          duration: const Duration(
-                                              milliseconds: 2000),
-                                          effectStrength: 1,
-                                          curve: Curves.elasticInOut),
-                                      child: Padding(
-                                        padding: EdgeInsets.only(top: sx(7)),
-                                        child: Icon(
-                                          Icons.arrow_forward_ios,
-                                          color: Colors.white,
-                                          size: sx(17),
-                                        ),
+                        Container(
+                          height: MediaQuery.of(context).size.height / 23,
+                          width: MediaQuery.of(context).size.width / 2,
+                          decoration: BoxDecoration(
+                              color: Theme.of(context).secondaryHeaderColor,
+                              borderRadius: BorderRadius.circular(20),
+                              boxShadow: [
+                                BoxShadow(
+                                    color:
+                                        const Color.fromARGB(94, 158, 158, 158),
+                                    spreadRadius: sx(2),
+                                    blurRadius: sx(6),
+                                    offset: Offset(sx(2.5), sx(3)))
+                              ]),
+                          child: ClipRRect(
+                            clipBehavior: Clip.antiAlias,
+                            borderRadius: BorderRadius.circular(20),
+                            child: Material(
+                              child: InkWell(
+                                  highlightColor: const Color(0xFFD4D0C6),
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        PageTransition(
+                                            child: const SummaryPage(),
+                                            type: PageTransitionType
+                                                .leftToRight));
+                                  },
+                                  child: Ink(
+                                    height:
+                                        MediaQuery.of(context).size.height / 23,
+                                    width:
+                                        MediaQuery.of(context).size.width / 2,
+                                    decoration: BoxDecoration(
+                                        color: Theme.of(context)
+                                            .secondaryHeaderColor,
+                                        borderRadius: BorderRadius.circular(20),
+                                        boxShadow: [
+                                          BoxShadow(
+                                              color: const Color.fromARGB(
+                                                  94, 158, 158, 158),
+                                              spreadRadius: sx(2),
+                                              blurRadius: sx(6),
+                                              offset: Offset(sx(2.5), sx(3)))
+                                        ]),
+                                    child: Center(
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Text('Get Your Summary',
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                                fontSize: sx(25),
+                                                fontFamily: 'Century Gothic',
+                                              )),
+                                          SizedBox(
+                                            width: sx(20),
+                                          ),
+                                          WidgetAnimator(
+                                            atRestEffect:
+                                                WidgetRestingEffects.pulse(
+                                                    duration: const Duration(
+                                                        milliseconds: 2000),
+                                                    effectStrength: 1,
+                                                    curve: Curves.elasticInOut),
+                                            child: Padding(
+                                              padding:
+                                                  EdgeInsets.only(top: sx(7)),
+                                              child: Icon(
+                                                Icons.arrow_forward_ios,
+                                                color: Colors.white,
+                                                size: sx(17),
+                                              ),
+                                            ),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                  ],
-                                ),
-                              ),
-                            )),
+                                  )),
+                            ),
+                          ),
+                        ),
                         SizedBox(
                           height: sx(30),
                         ),

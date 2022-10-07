@@ -23,65 +23,89 @@ class HomeIncome extends StatelessWidget {
             duration: const Duration(milliseconds: 400),
             numberOfPlays: 1,
           ),
-          child: GestureDetector(
-            onTap: () {
-              Navigator.push(
-                  context,
-                  PageTransition(
-                      child: const IncomePage(),
-                      type: PageTransitionType.leftToRight));
-            },
-            child: Container(
-              height: MediaQuery.of(context).size.width / 3.2,
-              width: MediaQuery.of(context).size.width / 3.2,
-              decoration: BoxDecoration(
-                  color: Theme.of(context).backgroundColor,
+          child: Container(
+            height: MediaQuery.of(context).size.width / 3.2,
+            width: MediaQuery.of(context).size.width / 3.2,
+            decoration: BoxDecoration(
+                color: Theme.of(context).backgroundColor,
+                borderRadius: BorderRadius.circular(100),
+                boxShadow: [
+                  BoxShadow(
+                      color: const Color.fromARGB(103, 44, 44, 46),
+                      spreadRadius: sx(2),
+                      blurRadius: sx(8),
+                      offset: Offset(sx(2.5), sx(3)))
+                ]),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(100),
+              clipBehavior: Clip.antiAlias,
+              child: Material(
+                child: InkWell(
                   borderRadius: BorderRadius.circular(100),
-                  boxShadow: [
-                    BoxShadow(
-                        color: const Color.fromARGB(103, 44, 44, 46),
-                        spreadRadius: sx(2),
-                        blurRadius: sx(8),
-                        offset: Offset(sx(2.5), sx(3)))
-                  ]),
-              child: Center(
-                  child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.arrow_downward_rounded,
-                        color: const Color(0xFF028A0F),
-                        size: sx(15),
-                        shadows: [
+                  highlightColor: Theme.of(context).primaryColor,
+                  // splashColor: Theme.of(context).secondaryHeaderColor,
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        PageTransition(
+                            child: const IncomePage(),
+                            type: PageTransitionType.leftToRight));
+                  },
+                  child: Ink(
+                    height: MediaQuery.of(context).size.width / 3.2,
+                    width: MediaQuery.of(context).size.width / 3.2,
+                    decoration: BoxDecoration(
+                        color: Theme.of(context).backgroundColor,
+                        borderRadius: BorderRadius.circular(100),
+                        boxShadow: [
                           BoxShadow(
                               color: const Color.fromARGB(103, 44, 44, 46),
                               spreadRadius: sx(2),
-                              blurRadius: sx(6),
-                              offset: Offset(sx(2), sx(3)))
-                        ],
-                      ),
-                      Text('Income',
-                          style: TextStyle(
-                            fontWeight: FontWeight.normal,
-                            fontSize: sx(10),
-                            fontFamily: 'Century Gothic',
-                          )),
-                    ],
+                              blurRadius: sx(8),
+                              offset: Offset(sx(2.5), sx(3)))
+                        ]),
+                    child: Center(
+                        child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(
+                              Icons.arrow_downward_rounded,
+                              color: const Color(0xFF028A0F),
+                              size: sx(15),
+                              shadows: [
+                                BoxShadow(
+                                    color:
+                                        const Color.fromARGB(103, 44, 44, 46),
+                                    spreadRadius: sx(2),
+                                    blurRadius: sx(6),
+                                    offset: Offset(sx(2), sx(3)))
+                              ],
+                            ),
+                            Text('Income',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: sx(10),
+                                  fontFamily: 'Century Gothic',
+                                )),
+                          ],
+                        ),
+                        SizedBox(
+                          height: sx(2),
+                        ),
+                        Text('120,000.32',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: sx(14),
+                              fontFamily: 'Century Gothic',
+                            )),
+                      ],
+                    )),
                   ),
-                  SizedBox(
-                    height: sx(2),
-                  ),
-                  Text('120,000.32',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: sx(14),
-                        fontFamily: 'Century Gothic',
-                      )),
-                ],
-              )),
+                ),
+              ),
             ),
           ),
         );
